@@ -5,8 +5,8 @@
 # Make sure the secret is at least 30 characters and all random, 
 # no regular words or you'll be exposed to dictionary attacks.
 ActionController::Base.session = {
-  :key         => '_LocadoraAPGSI_session',
-  :secret      => 'ce2c88f64b656cab4f3313fb694e1346722ae745d84c51abbed4c084c2de1b45fb3d699f577ffe8b5b5eec82ffebc1b7f808332ead09b841d4d8a20f6b915b1d'
+  :key         => '_teste_session',
+  :secret      => 'd7b180813e345839325a334934c1732f04d4695748cc348de9fa56d3f178b4d9cf938b442b61560dc106f204c11a6288ae14a3229d9bce752128dc71ae975e53'
 }
 
 # Use the database for sessions instead of the cookie-based default,

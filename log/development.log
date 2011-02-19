@@ -1,0 +1,2429 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (155.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (79.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTestes (20110219170155)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110219170155')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("testes")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (139.6ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (76.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (112.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (85.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170155')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTestes (20110219170155)
+Migrating to CreateGeneros (20110219170906)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("generos")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("testes")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (157.1ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (97.9ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (113.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (96.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (87.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20110219170155')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (174.0ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (189.8ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (134.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (96.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (98.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20110219170155')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (168.0ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (103.7ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (121.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (88.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (87.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (77.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20110219170155')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTestes (20110219170155)
+Migrating to CreateGeneros (20110219170906)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("generos")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("testes")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSocios (1)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('1')[0m
+Migrating to CreateCopias (2)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('2')[0m
+Migrating to CreateDiretors (3)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('3')[0m
+Migrating to CreateAtors (4)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('4')[0m
+Migrating to CreateEmprestimos (5)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('5')[0m
+Migrating to CreateGeneros (6)
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: table "generos" already exists: CREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSocios (1)
+Migrating to CreateCopias (2)
+Migrating to CreateDiretors (3)
+Migrating to CreateAtors (4)
+Migrating to CreateEmprestimos (5)
+Migrating to CreateGeneros (6)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: table "generos" already exists: CREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSocios (1)
+Migrating to CreateCopias (2)
+Migrating to CreateDiretors (3)
+Migrating to CreateAtors (4)
+Migrating to CreateEmprestimos (5)
+Migrating to CreateGeneros (6)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('6')[0m
+Migrating to AddAtorsCopias (7)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ators_id" integer, "copias_id" integer) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('7')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("ators")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("ators_copias")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("copias")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("diretors")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("emprestimos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("generos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("socios")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("testes")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSocios (1)
+Migrating to CreateCopias (2)
+Migrating to CreateDiretors (3)
+Migrating to CreateAtors (4)
+Migrating to CreateEmprestimos (5)
+Migrating to CreateGeneros (6)
+Migrating to AddAtorsCopias (7)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ators")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("ators_copias")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("copias")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("diretors")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("emprestimos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("generos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("socios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("testes")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (148.8ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (66.0ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ators_id" integer, "copias_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (108.6ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (74.7ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (111.2ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (95.4ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (75.5ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (80.7ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (113.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (96.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (85.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (88.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (72.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (82.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (88.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (84.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (77.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (175.6ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (86.8ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ators_id" integer, "copias_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (110.8ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (83.3ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (112.9ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (86.6ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (86.8ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (141.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (89.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (87.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (88.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (88.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (77.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (66.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (77.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (153.7ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (93.1ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ators_id" integer, "copias_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (115.4ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (95.9ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (135.3ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (98.7ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (85.8ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (86.9ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (124.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (91.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (82.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (66.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (66.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (77.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (77.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (136.7ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (94.7ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ators_id" integer, "copias_id" integer) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (101.9ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (84.7ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (123.0ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (90.5ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (75.2ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (80.2ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (129.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (80.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (82.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (66.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (77.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (77.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (88.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (77.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (168.7ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (91.2ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ators_id" integer, "copias_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (128.6ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (87.9ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (119.2ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (86.4ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (74.9ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (75.4ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (124.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (186.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (85.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (77.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (77.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (77.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (77.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (77.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (160.3ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (106.6ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ators_id" integer, "copias_id" integer) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (113.8ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (68.6ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (127.8ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (89.3ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (97.2ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (87.1ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (122.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (87.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (87.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (88.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (77.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (88.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (99.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (173.8ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (93.0ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ators_id" integer, "copias_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (137.7ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (90.7ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (129.3ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (88.4ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (89.8ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (87.0ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (111.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (83.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (101.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (99.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (111.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (99.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (88.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (88.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (85.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (158.6ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (94.4ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ators_id" integer, "copias_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (137.2ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (89.9ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (117.5ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (99.4ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (88.7ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (95.5ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (140.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (102.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (97.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (91.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (99.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (88.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (86.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (80.1ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (173.6ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (96.1ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ators_id" integer, "copias_id" integer) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (123.2ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (82.2ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (116.1ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (79.2ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (86.6ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (87.2ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (109.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (99.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (98.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (99.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (99.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (86.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (99.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (90.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (88.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (185.9ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (107.6ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ators_id" integer, "copias_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (137.2ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (103.1ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (126.9ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (112.8ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (84.2ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (87.2ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (113.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (85.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (89.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (99.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (99.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (99.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (86.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (164.1ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (68.3ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ators_id" integer, "copias_id" integer) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (106.1ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (98.5ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (121.6ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (362.7ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (86.1ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (96.0ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (117.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (93.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (87.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (77.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (66.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (77.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (163.2ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (93.6ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ators_id" integer, "copias_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (125.4ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (101.8ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (128.1ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (78.9ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (75.1ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (97.9ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (123.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (96.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (97.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (88.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (99.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (99.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (141.5ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (87.1ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ators_id" integer, "copias_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (133.1ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (94.3ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (125.9ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (92.2ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (97.6ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (97.9ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (120.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (78.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (87.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (88.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (88.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (88.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (99.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (99.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (99.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (167.2ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (82.8ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ators_id" integer, "copias_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (183.4ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (100.6ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (108.2ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (65.9ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (75.2ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (98.4ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (135.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (107.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (98.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (111.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (88.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (77.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (88.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (77.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (220.2ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (87.7ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ators_id" integer, "copias_id" integer) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (120.7ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (85.5ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (123.4ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (94.1ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (97.7ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (98.4ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (130.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (90.4ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (98.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (99.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (111.1ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (99.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (88.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (99.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (160.6ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (94.2ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ators_id" integer, "copias_id" integer) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (125.2ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (90.7ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (128.1ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (100.5ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (130.9ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (98.2ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (135.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (96.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (87.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (77.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (88.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (66.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (185.8ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (77.7ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ators_id" integer, "copias_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (132.2ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (106.3ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (123.9ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (104.2ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (97.3ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (108.8ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (129.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (102.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (98.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (88.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (166.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (88.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (88.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (87.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (100.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSocios (1)
+Migrating to CreateCopias (2)
+Migrating to CreateDiretors (3)
+Migrating to CreateAtors (4)
+Migrating to CreateEmprestimos (5)
+Migrating to CreateGeneros (6)
+Migrating to AddAtorsCopias (7)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ators")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ators_copias")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("copias")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("diretors")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("emprestimos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("generos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("socios")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("testes")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSocios (1)
+Migrating to CreateCopias (2)
+Migrating to CreateDiretors (3)
+Migrating to CreateAtors (4)
+Migrating to CreateEmprestimos (5)
+Migrating to CreateGeneros (6)
+Migrating to AddAtorsCopias (7)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ators")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ators_copias")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("copias")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("diretors")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("emprestimos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("generos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("socios")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("testes")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (174.6ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ators_id" integer, "copias_id" integer) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (114.2ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (86.8ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (109.8ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (74.8ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (86.2ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (98.2ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (116.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (93.4ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (87.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (88.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (77.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (77.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (88.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (88.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (125.8ms)[0m   [0;1mDROP TABLE "generos"[0m
+  [4;35;1mSQL (77.4ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '6'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("ators")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ators_copias")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("copias")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("diretors")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("emprestimos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("socios")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("testes")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSocios (1)
+Migrating to CreateCopias (2)
+Migrating to CreateDiretors (3)
+Migrating to CreateAtors (4)
+Migrating to CreateEmprestimos (5)
+Migrating to CreateGeneros (6)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('6')[0m
+Migrating to AddAtorsCopias (7)
+  [4;35;1mSQL (0.8ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("ators")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("ators_copias")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("copias")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("diretors")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("emprestimos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("generos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("socios")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("testes")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (104.2ms)[0m   [0;1mDROP TABLE "socios"[0m
+  [4;35;1mSQL (77.3ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '1'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ators")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("ators_copias")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("copias")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("diretors")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("emprestimos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("generos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("testes")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSocios (1)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('1')[0m
+Migrating to CreateCopias (2)
+Migrating to CreateDiretors (3)
+Migrating to CreateAtors (4)
+Migrating to CreateEmprestimos (5)
+Migrating to CreateGeneros (6)
+Migrating to AddAtorsCopias (7)
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("ators")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ators_copias")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("copias")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("diretors")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("emprestimos")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("generos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("socios")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("testes")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSocios (1)
+Migrating to CreateCopias (2)
+Migrating to CreateDiretors (3)
+Migrating to CreateAtors (4)
+Migrating to CreateEmprestimos (5)
+Migrating to CreateGeneros (6)
+Migrating to AddAtorsCopias (7)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ators")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ators_copias")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("copias")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("diretors")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("emprestimos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("generos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("socios")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("testes")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (115.3ms)[0m   [0;1mDROP TABLE "ators_copias"[0m
+  [4;35;1mSQL (72.2ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '7'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("ators")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("copias")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("diretors")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("emprestimos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("generos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("socios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("testes")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSocios (1)
+Migrating to CreateCopias (2)
+Migrating to CreateDiretors (3)
+Migrating to CreateAtors (4)
+Migrating to CreateEmprestimos (5)
+Migrating to CreateGeneros (6)
+Migrating to AddAtorsCopias (7)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ator_id" integer, "copia_id" integer) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('7')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ators")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ators_copias")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("copias")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("diretors")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("emprestimos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("generos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("socios")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("testes")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (198.1ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (95.7ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ator_id" integer, "copia_id" integer) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (134.5ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (101.8ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (117.0ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (92.0ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (86.5ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (184.7ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (123.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (98.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (85.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (90.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (87.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (99.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (99.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (90.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (99.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (86.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (165.1ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (89.5ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ator_id" integer, "copia_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (120.7ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (95.9ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (123.0ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (103.0ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (99.8ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (84.8ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (141.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (92.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (86.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (88.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (88.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (88.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (77.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (77.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (178.3ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (89.4ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ator_id" integer, "copia_id" integer) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (129.9ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (87.3ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (99.3ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (95.9ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (86.6ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (98.3ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (128.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (103.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (109.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (110.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (111.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (99.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (88.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (77.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (165.6ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (79.2ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ator_id" integer, "copia_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (117.9ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (98.7ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (120.3ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (97.1ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (86.6ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (84.2ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (130.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (93.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (84.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (79.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (75.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (91.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (75.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (99.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (102.1ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (171.2ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (100.3ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ator_id" integer, "copia_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (119.9ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (98.7ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (120.1ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (97.4ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (97.7ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (84.3ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (117.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (94.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (96.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (88.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (77.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (88.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (99.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (99.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (151.5ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (118.2ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ator_id" integer, "copia_id" integer) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (201.6ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (102.3ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (127.9ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (78.8ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (86.6ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (87.1ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (100.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (76.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (87.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (77.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (88.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (77.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (88.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (77.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (140.3ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (85.9ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ator_id" integer, "copia_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (111.0ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (110.6ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (131.2ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (93.2ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (75.4ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (91.7ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (115.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (111.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (108.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (82.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (94.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (99.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (99.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (99.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (93.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (166.8ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (94.4ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ator_id" integer, "copia_id" integer) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (125.8ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (79.6ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (129.1ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (77.3ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (63.9ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (64.5ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (123.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (97.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (75.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (77.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (88.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (77.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (88.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (88.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (66.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (169.8ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (101.2ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ator_id" integer, "copia_id" integer) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (118.4ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (87.7ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (109.8ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (85.6ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (86.7ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (86.6ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (116.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (97.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (98.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (99.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (88.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (106.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (110.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (93.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (146.4ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (66.3ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ator_id" integer, "copia_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (132.2ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (95.6ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (134.6ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (94.4ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (108.7ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (94.1ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (133.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (98.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (90.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (73.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (99.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (99.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (103.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (85.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (99.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (167.8ms)[0m   [0;1mCREATE TABLE "ators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (90.9ms)[0m   [0;1mCREATE TABLE "ators_copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ator_id" integer, "copia_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (106.5ms)[0m   [0;1mCREATE TABLE "copias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titulo" varchar(255), "duracao" integer, "ano" varchar(255), "genero_id" integer, "diretor_id" integer, "aquisicao" date, "estado" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (87.9ms)[0m   [0;1mCREATE TABLE "diretors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "nacionalidade" varchar(255), "data_nascimento" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_emprestimo" date, "data_devolucao" date, "valor" float, "copia_id" integer, "socio_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (97.0ms)[0m   [0;1mCREATE TABLE "generos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descricao" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (97.0ms)[0m   [0;1mCREATE TABLE "socios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "endereco" varchar(255), "telefone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (85.9ms)[0m   [0;1mCREATE TABLE "testes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (125.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (83.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (86.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110219170906')[0m
+  [4;35;1mSQL (88.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (77.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (88.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;36;1mSQL (88.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;35;1mSQL (88.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (144.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (77.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m

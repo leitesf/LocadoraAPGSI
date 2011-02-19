@@ -1,7 +1,7 @@
 class AddAtorsCopias < ActiveRecord::Migration
   def self.up
     create_table :ators_copias do |t|
-      t.references :ators, :copias
+      t.references :ator, :copia
     end
   end
 
@@ -9,3 +9,4 @@ class AddAtorsCopias < ActiveRecord::Migration
     drop_table :ators_copias
   end
 end
+
