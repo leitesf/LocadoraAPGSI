@@ -31,9 +31,9 @@ describe Ator do
 		}.should_not change(Ator, :count)
 	end
 
-	it "deveria possuir relacionamento com copias" do
+	it "deveria possuir relacionamento com filmes" do
 		lambda {
-			ators(:hanks).copias
+			ators(:hanks).filmes
 		}.should_not raise_error
 	end
 

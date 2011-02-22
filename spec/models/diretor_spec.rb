@@ -31,9 +31,9 @@ describe Diretor do
 		}.should_not change(Diretor, :count)
 	end
 
-	it "deveria possuir relacionamento com copias" do
+	it "deveria possuir relacionamento com filmes" do
 		lambda {
-			diretors(:spielberg).copias
+			diretors(:spielberg).filmes
 		}.should_not raise_error
 	end
 

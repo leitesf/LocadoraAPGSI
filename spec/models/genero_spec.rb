@@ -17,9 +17,9 @@ describe Genero do
 		}.should_not change(Genero, :count)
 	end
 
-	it "deveria possuir relacionamento com copias" do
+	it "deveria possuir relacionamento com filmes" do
 		lambda {
-			generos(:drama).copias
+			generos(:drama).filmes
 		}.should_not raise_error
 	end
 
