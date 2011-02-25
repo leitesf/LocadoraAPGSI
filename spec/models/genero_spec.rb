@@ -26,10 +26,9 @@ describe Genero do
     end
 
     it "deveria buscar o filme pelo genero" do
-      genero = Genero.buscar_por_descricao('drama')
-      filmes = genero.filmes
-      for filme in filmes
-        filme.genero.descricao.should include('drama')
+      genero = Genero.buscar_por_descricao('Drama')
+      for filme in genero.filmes
+        filme.genero.descricao.should eql('Drama')
       end
     end
  
