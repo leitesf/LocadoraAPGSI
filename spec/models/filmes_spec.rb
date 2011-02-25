@@ -76,6 +76,11 @@ describe Filme do
     it "copias livres deve ter pelo menos um elemento" do
       filmes(:nao_foram).copias_livres.size.should eql(1)
     end
+
+    it "deveria buscar o filme de Volta para o futuro" do
+      filme = Filme.buscar_por_titulo('futuro')
+      filme.nome.should eql('De Volta para o futuro')
+    end
   end
 
 	private
