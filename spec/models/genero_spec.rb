@@ -2,7 +2,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe Genero do
 
-	fixtures :generos
+	fixtures :generos, :filmes
 
   it "deveria ser válido" do
     lambda {
@@ -22,6 +22,14 @@ describe Genero do
 			generos(:drama).filmes
 		}.should_not raise_error
 	end
+
+  it "deveria buscar o filme pelo genero" do
+    genero = Genero.buscar_por_descricao('drama')
+    filmes = genero.filmes
+    for filme in filmes
+      filme.genero.descricao.should include('drama')
+    end
+  end
 
 	private
     def create_genero(options={})
