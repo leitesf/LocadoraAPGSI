@@ -40,7 +40,7 @@ describe Diretor do
     end
 
     it "deveria buscar filmes por diretor" do
-      diretor = Diretor.buscar_por_nome('Tom Hanks')
+      diretor = Diretor.buscar_por_nome('Steven Spielberg')
       for filme in diretor.filmes
         filme.diretor.should eql(diretor)
       end
