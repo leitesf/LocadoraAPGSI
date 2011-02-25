@@ -4,7 +4,7 @@ describe Genero do
 
 	fixtures :generos, :filmes
 
-  context 'Deveria validar o model de Filme: ' do
+  context 'Deveria validar o model de Genero: ' do
 
     it "deveria ser válido" do
       lambda {
