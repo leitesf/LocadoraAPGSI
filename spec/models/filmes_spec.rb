@@ -50,10 +50,31 @@ describe Filme do
       }.should_not raise_error
     end
 
-    it "deveria possuir relacionamento com emprestimos" do
+    it "deveria possuir relacionamento com copias" do
       lambda {
-        filmes(:nao_foram).emprestimos
+        filmes(:nao_foram).copias
       }.should_not raise_error
+    end
+
+    it "deveria verificar copias disponiveis para locação" do
+      lambda {
+        filmes(:nao_foram).copias_livres
+      }.should_not raise_error
+    end
+    
+    it "deveria ter copias livres" do
+      copias = filmes(:nao_foram).copias_livres
+      for copia in copias
+        copia.locado.should eql(false)
+      end
+    end
+
+    it "copias livres deveria ser um array" do
+      filmes(:nao_foram).copias_livres.class.should eql(Array)
+    end
+
+    it "copias livres deve ter pelo menos um elemento" do
+      filmes(:nao_foram).copias_livres.size.should eql(1)
     end
   end
 
