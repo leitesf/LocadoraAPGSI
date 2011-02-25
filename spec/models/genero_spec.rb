@@ -4,32 +4,37 @@ describe Genero do
 
 	fixtures :generos, :filmes
 
-  it "deveria ser válido" do
-    lambda {
-			genero = create_genero
-		}
-  end
+  context 'Deveria validar o model de Filme: ' do
 
-	it "deveria ser invalido sem descricao" do
-		lambda {
-			genero = create_genero(:descricao => nil)
-			genero.errors.should be_invalid(:descricao)
-		}.should_not change(Genero, :count)
-	end
-
-	it "deveria possuir relacionamento com filmes" do
-		lambda {
-			generos(:drama).filmes
-		}.should_not raise_error
-	end
-
-  it "deveria buscar o filme pelo genero" do
-    genero = Genero.buscar_por_descricao('drama')
-    filmes = genero.filmes
-    for filme in filmes
-      filme.genero.descricao.should include('drama')
+    it "deveria ser válido" do
+      lambda {
+        genero = create_genero
+      }
     end
+
+    it "deveria ser invalido sem descricao" do
+      lambda {
+        genero = create_genero(:descricao => nil)
+        genero.errors.should be_invalid(:descricao)
+      }.should_not change(Genero, :count)
+    end
+
+    it "deveria possuir relacionamento com filmes" do
+      lambda {
+        generos(:drama).filmes
+      }.should_not raise_error
+    end
+
+    it "deveria buscar o filme pelo genero" do
+      genero = Genero.buscar_por_descricao('drama')
+      filmes = genero.filmes
+      for filme in filmes
+        filme.genero.descricao.should include('drama')
+      end
+    end
+ 
   end
+
 
 	private
     def create_genero(options={})
