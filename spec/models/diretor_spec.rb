@@ -39,6 +39,13 @@ describe Diretor do
       }.should_not raise_error
     end
 
+    it "deveria buscar filmes por diretor" do
+      diretor = Diretor.buscar_por_nome('Tom Hanks')
+      for filme in diretor.filmes
+        filme.diretor.should eql(diretor)
+      end
+    end
+
   end
 
 	private
