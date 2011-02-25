@@ -42,7 +42,7 @@ describe Ator do
     it "deveria buscar filmes por ator" do
       ator = Ator.buscar_por_nome('Tom Hanks')
       for filme in ator.filmes
-        filme.ator.nome.should eql('Tom Hanks')
+        filme.ators.should include(ator)
       end
     end
 
