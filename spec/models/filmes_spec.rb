@@ -78,8 +78,10 @@ describe Filme do
     end
 
     it "deveria buscar o filme de Volta para o futuro" do
-      filme = Filme.buscar_por_titulo('futuro')
-      filme.nome.should eql('De Volta para o futuro')
+      filmes = Filme.buscar_por_titulo('futuro')
+      for filme in filmes
+        filme.titulo.should include("futuro")
+      end
     end
   end
 
