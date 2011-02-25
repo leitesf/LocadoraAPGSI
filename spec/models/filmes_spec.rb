@@ -83,6 +83,14 @@ describe Filme do
         filme.titulo.should include("futuro")
       end
     end
+
+    it "deveria buscar o filme pelo genero" do
+      genero = Genero.buscar_por_descricao('drama')
+      filmes = Filme.buscar_por_genero(genero)
+      for filme in filmes
+        filme.genero.descricao.should include('drama')
+      end
+    end
   end
 
 	private
