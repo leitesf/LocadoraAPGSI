@@ -26,18 +26,27 @@ describe Copia do
     end
 
     it "deveria emprestar a cópia do filme" do
-      emprestimo = Copia.emprestar(copias(:nao_foram),socios(:joao))
-      emprestimo.should be_an_instance_of(Emprestimo)
-      socios(:joao).emprestimos.should include(emprestimo)
+      lambda{
+        emprestimo = copias(:nao_foram).emprestar(socios(:joao))
+        emprestimo.should be_an_instance_of(Emprestimo)
+        copias(:nao_foram).locado.should be_true
+        socios(:joao).emprestimos.should include(emprestimo)
+      }
+      
     end
 
     it "deveria devolver o filme que foi alugado" do
-      Copia.emprestar(copias(:nao_foram),socios(:joao))
-      Copia.devolver(copias(:nao_foram)).should be_true
+      copia = copias(:nao_foram)
+      lambda{
+        emprestimo = copia.emprestar(socios(:joao))
+        copia.devolver.should be_true
+        copia.locado.should be_false
+        emprestimo.data_devolucao.should eql(Date.today)
+      }
     end
 
     it "não deveria devolver um filme que não está alugado" do
-      Copia.devolver(copias(:nao_foram)).should be_false
+      copias(:nao_foram).devolver.should eql false
     end
   end
 

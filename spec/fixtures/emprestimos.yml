@@ -1,5 +1,5 @@
 nao_foram:
-  data_emprestimo: Date.now
+  data_emprestimo: Date.today
   copia: nao_foram
   socio: joao
 
