@@ -6,5 +6,10 @@ class Copia < ActiveRecord::Base
     Copia.find(:all, :conditions => {:estado => 'Ruim'})
   end
 
+
+  def self.emprestar(copia,socio)
+    Emprestimo.create(:copia_id => copia.id, :socio_id => socio.id, :data_emprestimo => Date.today)
+  end
+
 end
 
