@@ -30,6 +30,15 @@ describe Copia do
       emprestimo.should be_an_instance_of(Emprestimo)
       socios(:joao).emprestimos.should include(emprestimo)
     end
+
+    it "deveria devolver o filme que foi alugado" do
+      Copia.emprestar(copias(:nao_foram),socios(:joao))
+      Copia.devolver(copias(:nao_foram)).should be_true
+    end
+
+    it "não deveria devolver um filme que não está alugado" do
+      Copia.devolver(copias(:nao_foram)).should be_false
+    end
   end
 
   
