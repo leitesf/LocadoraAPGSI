@@ -2,7 +2,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe Copia do
 
-	fixtures :copias, :filmes
+	fixtures :copias, :filmes, :socios
 
   context 'Deveria validar o model de Copia: ' do
     it "deveria ser válido" do
@@ -23,6 +23,12 @@ describe Copia do
       lambda {
         copias(:nao_foram).filme
       }.should_not raise_error
+    end
+
+    it "deveria emprestar a cópia do filme" do
+      emprestimo = Copia.emprestar(copias(:nao_foram),socios(:joao)).should_not raise_error
+      emprestimo.should be_an_instance_of(Emprestimo)
+      socios(:joao).emprestimos.should include(emprestimo)
     end
   end
 
