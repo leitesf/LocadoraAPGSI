@@ -26,7 +26,7 @@ describe Copia do
     end
 
     it "deveria emprestar a cópia do filme" do
-      emprestimo = Copia.emprestar(copias(:nao_foram),socios(:joao)).should_not raise_error
+      emprestimo = Copia.emprestar(copias(:nao_foram),socios(:joao))
       emprestimo.should be_an_instance_of(Emprestimo)
       socios(:joao).emprestimos.should include(emprestimo)
     end
