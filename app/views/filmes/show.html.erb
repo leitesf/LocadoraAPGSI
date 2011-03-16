@@ -1,0 +1,8 @@
+<h1><%=h @filme.titulo%></h1>
+<p>Duração: <%= @filme.duracao%> </p>
+<p>Ano: <%= @filme.ano%> </p>
+<p>Diretor: <%= @filme.diretor.nome%> </p>
+<p>Gênero: <%= @filme.genero.descricao%> </p>
+
+<%= link_to 'Editar', edit_filme_path(@filme) %> |
+<%= link_to 'Voltar', filmes_path %>

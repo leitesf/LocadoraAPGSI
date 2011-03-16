@@ -1,0 +1,27 @@
+<h1>Editar Filme</h1>
+
+<% form_for(@filme) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    Título: <%= f.text_field :titulo %>
+  </p>
+  <p>
+    Duração: <%= f.text_field :duracao %>
+  </p>
+  <p>
+    Ano: <%= f.text_field :ano %>
+  </p>
+  <p>
+    Diretor: <%= f.select :diretor_id, @diretores %>
+  </p>
+  <p>
+    Gênero: <%= f.select :genero_id, @generos %>
+  </p>
+
+  <p>
+    <%= f.submit 'Salvar'%>
+  </p>
+  <%end%>
+<%= link_to 'Visualizar', @filme %> |
+<%= link_to 'Voltar para a tela inicial', filmes_path %>
