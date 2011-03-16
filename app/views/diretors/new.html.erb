@@ -1,0 +1,19 @@
+<h1>Adicionar Diretor</h1>
+
+<% form_for(@diretor) do |f| %>
+  <div id="error"><%= f.error_messages %></div>
+  <p>
+    Nome: <%= f.text_field :nome %>
+  </p>
+  <p>
+    Nacionalidade: <%= f.text_field :nacionalidade %>
+  </p>
+  <p>
+    Data de Nascimento: <%= f.text_field :data_nascimento %>
+  </p>
+  <p>
+    <%= f.submit 'Salvar'%>
+  </p>
+<% end%>
+
+<%= link_to 'Voltar', diretors_path %>

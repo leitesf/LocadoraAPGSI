@@ -1,0 +1,21 @@
+<h1>Editar Ator</h1>
+
+<% form_for(@ator) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    Nome: <%= f.text_field :nome %>
+  </p>
+  <p>
+    Nacionalidade: <%= f.text_field :nacionalidade %>
+  </p>
+  <p>
+    Data de Nascimento: <%= f.text_field :data_nascimento %>
+  </p>
+
+  <p>
+    <%= f.submit 'Salvar'%>
+  </p>
+  <%end%>
+<%= link_to 'Visualizar', @ator %> |
+<%= link_to 'Voltar para a tela inicial', ators_path %>

@@ -1,0 +1,12 @@
+<h1>Adicionar Genero</h1>
+
+<% form_for(@genero) do |f| %>
+  <div id="error"><%= f.error_messages %></div>
+  <p>
+    Descrição: <%= f.text_field :descricao %>
+  </p>
+    <%= f.submit 'Salvar'%>
+  </p>
+<% end%>
+
+<%= link_to 'Voltar', generos_path %>

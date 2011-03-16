@@ -1,0 +1,8 @@
+<h1><%=h @ator.nome%></h1>
+<p>Nacionalidade: <%= @ator.nacionalidade%> </p>
+<p>Data de Nascimento: <%= @ator.data_nascimento%> </p>
+
+<h3>Filmes com este ator</h3>
+
+<%= link_to 'Editar', edit_ator_path(@ator) %> |
+<%= link_to 'Voltar', ators_path %>

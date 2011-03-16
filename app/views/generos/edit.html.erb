@@ -1,0 +1,15 @@
+<h1>Editar Genero</h1>
+
+<% form_for(@genero) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    Nome: <%= f.text_field :descricao %>
+  </p>
+
+  <p>
+    <%= f.submit 'Salvar'%>
+  </p>
+  <%end%>
+<%= link_to 'Visualizar', @genero %> |
+<%= link_to 'Voltar para a tela inicial', generos_path %>

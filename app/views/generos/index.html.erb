@@ -1,0 +1,23 @@
+<h1>Listar Generos</h1>
+
+<table>
+  <tr>
+    <th>Generos</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @generos.each do |genero| %>
+  <tr>
+    <td><%=h genero.descricao %></td>
+    <td><%= link_to 'Visualizar', genero %></td>
+    <td><%= link_to 'Editar', edit_genero_path(genero) %></td>
+    <td><%= link_to 'Excluir', genero, :confirm => 'Você tem certeza?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novo genero', new_genero_path %>
