@@ -5,7 +5,7 @@
 <p>Gênero: <%= @filme.genero.descricao%> </p>
 
 <h2>Cópias</h2>
-<table name ="list_copias">
+<table id ="list_copias">
     <tr class="head">
       <td>Código</td>
       <td>Data de Aquisição</td>
@@ -21,15 +21,17 @@
     </tr>
   <% end %>
 </table>
-<div name ="new_copia"></div>
+<div id ="new_copia"></div>
 <h2>Atores</h2>
-<table name ="list_atores">
+<table id ="list_atores">
   <% for ator in @filme.ators%>
-    <tr>
-      <td><%= ator.nome%></td>
-    </tr>
+    <%= render :partial => 'ators/list', :locals => {:ator => ator} %>
   <% end %>
 </table>
-<div name ="new_ator"></div>
+<% remote_form_for :ator, :url => {:controller => :filmes ,:action => :new_ator, :filme_id => @filme.id} do |f|%>
+  Ator: <%= f.select :ator_id, @ators %> <%= f.submit "Adicionar" %>
+<% end %>
+  
+<div id ="new_ator"></div>
 <%= link_to 'Editar', edit_filme_path(@filme) %> |
 <%= link_to 'Voltar', filmes_path %>

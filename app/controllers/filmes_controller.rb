@@ -5,12 +5,28 @@ class FilmesController < ApplicationController
 
   def show
     @filme = Filme.find(params[:id])
+    @ators = Ator.all.collect{|p| [p.nome, p.id]}
   end
 
   def new
     @filme = Filme.new
-    @diretores = Diretor.all.collect{|p| [p.id, p.nome]}
-    @generos = Genero.all.collect{|p| [p.id, p.descricao]}
+    @diretores = Diretor.all.collect{|p| [p.nome, p.id]}
+    @generos = Genero.all.collect{|p| [p.descricao, p.id]}
+  end
+
+  def new_ator
+    @ator = Ator.find(params[:ator][:ator_id])
+    @filme = Filme.find(params[:filme_id])
+    unless @filme.ators.include? @ator
+      @filme.ators << @ator
+      render :update do |p|
+        p.insert_html :bottom, 'list_atores', :partial => 'ators/list', :locals => {:ator => @ator}
+      end
+    else
+      render :update do |p|
+        p.alert 'Esse ator já está incluído no filme'
+      end
+    end
   end
 
 
