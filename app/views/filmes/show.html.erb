@@ -4,5 +4,32 @@
 <p>Diretor: <%= @filme.diretor.nome%> </p>
 <p>Gênero: <%= @filme.genero.descricao%> </p>
 
+<h2>Cópias</h2>
+<table name ="list_copias">
+    <tr class="head">
+      <td>Código</td>
+      <td>Data de Aquisição</td>
+      <td>Estado</td>
+      <td>Situação</td>
+    </tr>
+  <% for copia in @filme.copias%>
+    <tr>
+      <td><%= copia.id %></td>
+      <td><%= copia.aquisicao %></td>
+      <td><%= copia.estado %></td>
+      <td><%= copia.locado ? 'Alugado' :  'Disponível'%></td>
+    </tr>
+  <% end %>
+</table>
+<div name ="new_copia"></div>
+<h2>Atores</h2>
+<table name ="list_atores">
+  <% for ator in @filme.ators%>
+    <tr>
+      <td><%= ator.nome%></td>
+    </tr>
+  <% end %>
+</table>
+<div name ="new_ator"></div>
 <%= link_to 'Editar', edit_filme_path(@filme) %> |
 <%= link_to 'Voltar', filmes_path %>
