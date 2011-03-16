@@ -50,8 +50,6 @@ describe Copia do
     end
   end
 
-  
-
 	private
     def create_copia(options={})
       Copia.create({
