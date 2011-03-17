@@ -2,7 +2,8 @@
 <p>Nacionalidade: <%= @diretor.nacionalidade%> </p>
 <p>Data de Nascimento: <%= @diretor.data_nascimento%> </p>
 
-<h3>Filmes com este diretor</h3>
+<h2>Filmes com este diretor</h2>
+<%= render :partial => 'filmes/list', :locals => {:filmes => @diretor.filmes} %>
 
 <%= link_to 'Editar', edit_diretor_path(@diretor) %> |
 <%= link_to 'Voltar', diretors_path %>

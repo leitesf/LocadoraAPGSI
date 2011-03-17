@@ -1,0 +1,22 @@
+<% if filmes.size >0 %>
+<table>
+  <tr>
+    <th>Título</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% filmes.each do |filme| %>
+    <tr>
+      <td><%=h filme.titulo%></td>
+      <td><%= link_to 'Visualizar', filme %></td>
+      <td><%= link_to 'Editar', edit_filme_path(filme) %></td>
+      <td><%= link_to 'Excluir', filme, :confirm => 'Você tem certeza?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+<% else %>
+  <p>Nenhum</p>
+
+<% end %>

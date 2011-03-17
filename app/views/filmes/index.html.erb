@@ -1,22 +1,6 @@
 <h1>Listar Filmes</h1>
 
-<table>
-  <tr>
-    <th>Filmees</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @filmes.each do |filme| %>
-  <tr>
-    <td><%=h filme.titulo%></td>
-    <td><%= link_to 'Visualizar', filme %></td>
-    <td><%= link_to 'Editar', edit_filme_path(filme) %></td>
-    <td><%= link_to 'Excluir', filme, :confirm => 'Você tem certeza?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+<%= render :partial => 'list', :locals => {:filmes => @filmes} %>
 
 <br />
 
