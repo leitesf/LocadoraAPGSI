@@ -4,13 +4,13 @@ nao_foram:
   socio: joao
 
 valor_devido_com_atraso:
-  data_emprestimo: Date.today - 5.days
-  data_devolucao: Date.today
+  data_emprestimo: 2011-02-10
+  data_devolucao: 2011-02-15
   copia: nao_foram
   socio: joao
 
 valor_devido_sem_atraso:
-  data_emprestimo: Date.today - 2.days
-  data_devolucao: Date.today
+  data_emprestimo: 2011-02-10
+  data_devolucao: 2011-02-12
   copia: nao_foram
   socio: joao

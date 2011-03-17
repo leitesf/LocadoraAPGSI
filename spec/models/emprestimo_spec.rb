@@ -30,11 +30,11 @@ describe Emprestimo do
 	end
 
   it "deveria retornar o valor devido de um empréstimo com atraso" do
-    emprestimos(:valor_devido_com_atraso).valor_devido.should eql 9
+    emprestimos(:valor_devido_com_atraso).valor_devido.should eql 9.0
   end
 
 	it "deveria retornar o valor devido de um empréstimo sem atraso" do
-    emprestimos(:valor_devido_sem_atraso).valor_devido.should eql 3
+    emprestimos(:valor_devido_sem_atraso).valor_devido.should eql 3.0
   end
 
   private
