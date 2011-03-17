@@ -37,6 +37,19 @@ describe Socio do
 		}.should_not raise_error
 	end
 
+  it "deveria verificar emprestimos devidos" do
+      lambda {
+        socios(:joao).emprestimos_devidos
+      }.should_not raise_error
+    end
+
+  it "deveria ter emprestimos devidos" do
+    emprestimos = socios(:joao).emprestimos_devidos
+    for emprestimo in emprestimos
+      emprestimo.data_devolucao.should be_nil
+    end
+  end
+
 	private
     def create_socio(options={})
       Socio.create({

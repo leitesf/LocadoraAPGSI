@@ -2,7 +2,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe Filme do
 
-	fixtures :filmes
+	fixtures :filmes, :copias
 
   context 'Deveria validar o model de Filme: ' do
     it "deveria ser válido" do
