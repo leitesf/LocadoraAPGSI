@@ -1,8 +1,8 @@
 <h1><%=h @filme.titulo%></h1>
 <p>Duração: <%= @filme.duracao%> </p>
 <p>Ano: <%= @filme.ano%> </p>
-<p>Diretor: <%= @filme.diretor.nome%> </p>
-<p>Gênero: <%= @filme.genero.descricao%> </p>
+<p>Diretor: <%= @filme.diretor ? @filme.diretor.nome : 'Sem diretor'%> </p>
+<p>Gênero: <%= @filme.genero ? @filme.genero.descricao : 'Sem gênero'%> </p>
 
 <h2>Cópias</h2>
 <table id ="list_copias">
@@ -13,15 +13,15 @@
       <td>Situação</td>
     </tr>
   <% for copia in @filme.copias%>
-    <tr>
-      <td><%= copia.id %></td>
-      <td><%= copia.aquisicao %></td>
-      <td><%= copia.estado %></td>
-      <td><%= copia.locado ? 'Alugado' :  'Disponível'%></td>
-    </tr>
+    <%= render :partial => 'list_copias', :locals => {:copia => copia} %>
   <% end %>
 </table>
-<div id ="new_copia"></div>
+<% remote_form_for :copia, :url => {:controller => :filmes ,:action => :new_copia, :filmes_id => @filme.id} do |f|%>
+<h4>Nova cópia</h4>
+  <p> Data de Aquisição: <%= f.text_field :aquisicao %></p>
+  <p>Estado: <%= f.select :estado,["Bom","Ruim"] %></p>
+  <p><%= f.submit "Adicionar" %></p>
+<% end %>
 <h2>Atores</h2>
 <table id ="list_atores">
   <% for ator in @filme.ators%>
@@ -29,7 +29,9 @@
   <% end %>
 </table>
 <% remote_form_for :ator, :url => {:controller => :filmes ,:action => :new_ator, :filme_id => @filme.id} do |f|%>
-  Ator: <%= f.select :ator_id, @ators %> <%= f.submit "Adicionar" %>
+  <h4>Novo ator</h4>
+  <p>Ator: <%= f.select :ator_id, @ators %></p>
+  <p><%= f.submit "Adicionar" %></p>
 <% end %>
   
 <div id ="new_ator"></div>

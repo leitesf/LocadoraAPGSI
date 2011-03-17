@@ -29,6 +29,15 @@ class FilmesController < ApplicationController
     end
   end
 
+  def new_copia
+    @copia = Copia.new(params[:copia])
+    @copia.filme_id = params[:filme_id]
+    @copia.save
+    render :update do |p|
+      p.insert_html :bottom, 'list_copias', :partial => 'list_copias', :locals => {:copia => @copia}
+    end
+  end
+
 
   def edit
     @filme = Filme.find(params[:id])
