@@ -11,5 +11,18 @@ class Emprestimo < ActiveRecord::Base
     self.data_devolucao = Date.today
     self.save
   end
+
+  def valor_devido
+    unless self.data_devolucao == nil
+      dias = (self.data_devolucao - self.data_emprestimo).to_i
+      if dias> 3
+        self.valor + (self.valor * (dias - 3))
+      else
+        self.valor
+      end
+    else
+      0.to_f
+    end    
+  end
 end
 

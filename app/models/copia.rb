@@ -27,5 +27,10 @@ class Copia < ActiveRecord::Base
     end
   end
 
+  def valor_devido_do_ultimo_emprestimo
+    emprestimo = self.emprestimos.last
+    emprestimo.valor_devido
+  end
+
 end
 
