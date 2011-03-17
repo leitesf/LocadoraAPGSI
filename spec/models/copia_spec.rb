@@ -2,7 +2,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe Copia do
 
-	fixtures :copias, :filmes, :socios
+	fixtures :copias, :filmes, :socios, :emprestimos
 
   context 'Deveria validar o model de Copia: ' do
     it "deveria ser válido" do
@@ -47,6 +47,10 @@ describe Copia do
 
     it "não deveria devolver um filme que não está alugado" do
       copias(:nao_foram).devolver.should eql false
+    end
+
+    it "deveria retornar o valor devido do último empréstimo" do
+      copias(:nao_foram).valor_devido_do_ultimo_emprestimo.should be_an_instance_of(Float)
     end
   end
 

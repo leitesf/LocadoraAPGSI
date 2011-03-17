@@ -29,6 +29,10 @@ describe Emprestimo do
 		}.should_not raise_error
 	end
 
+  it "deveria retornar o valor devido" do
+    emprestimos(:valor_devido).valor_devido.should eql 9
+  end
+
 	private
     def create_emprestimo(options={})
       Emprestimo.create({
