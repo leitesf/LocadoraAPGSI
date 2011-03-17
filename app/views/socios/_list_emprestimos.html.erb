@@ -1,0 +1,11 @@
+<table id ='<%= table_id %>'>
+  <tr class="head">
+    <td>Cópia</td>
+    <td>Filme</td>
+    <td>Data do empréstimo</td>
+    <td>Data devolução</td>
+  </tr>
+  <% for emprestimo in emprestimos%>
+    <%= render :partial => "item_list_emprestimo", :locals => {:emprestimo => emprestimo} %>
+  <% end %>
+</table>

@@ -1,0 +1,20 @@
+<h1>Adicionar Socio</h1>
+
+<% form_for(@socio) do |f| %>
+  <div id="error"><%= f.error_messages %></div>
+
+  <p>
+    Nome: <%= f.text_field :nome %>
+  </p>
+  <p>
+    Endereco: <%= f.text_field :endereco %>
+  </p>
+  <p>
+    Telefone: <%= f.text_field :telefone %>
+  </p>
+  <p>
+    <%= f.submit 'Salvar'%>
+  </p>
+<% end%>
+
+<%= link_to 'Voltar', socios_path %>

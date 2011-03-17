@@ -1,0 +1,22 @@
+<% if socios.size >0 %>
+<table>
+  <tr>
+    <th>Nome</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% socios.each do |socio| %>
+    <tr>
+      <td><%=h socio.nome%></td>
+      <td><%= link_to 'Visualizar', socio %></td>
+      <td><%= link_to 'Editar', edit_socio_path(socio) %></td>
+      <td><%= link_to 'Excluir', socio, :confirm => 'Você tem certeza?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+<% else %>
+  <p>Nenhum</p>
+
+<% end %>

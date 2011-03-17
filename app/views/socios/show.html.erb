@@ -1,0 +1,19 @@
+<h1><%=h @socio.nome%></h1>
+<p>Endereço: <%= @socio.endereco%> </p>
+<p>Telefone: <%= @socio.telefone%> </p>
+
+<h2>Empréstimos Devidos</h2>
+  <%= render :partial => 'list_emprestimos', :locals => {:emprestimos => @socio.emprestimos_devidos, :table_id => 'list_emprestimos_devidos'} %>
+
+<% remote_form_for :emprestimo, :url => {:controller => :socios ,:action => :new_emprestimo, :socio_id => @socio.id} do |f|%>
+  <h4>Novo empréstimo</h4>
+  <p>Cópia: <%= f.text_field :copia_id %></p>
+  <p><%= f.submit "Emprestar" %></p>
+<% end %>
+
+<h2>Empréstimos passados</h2>
+<%= render :partial => 'list_emprestimos', :locals => {:emprestimos => (@socio.emprestimos_devolvidos), :table_id => 'list_emprestimos_devidos'} %>
+  
+<div id ="new_ator"></div>
+<%= link_to 'Editar', edit_socio_path(@socio) %> |
+<%= link_to 'Voltar', socios_path %>
