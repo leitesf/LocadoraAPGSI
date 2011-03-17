@@ -18,6 +18,11 @@
 
         <div id="sidebar">
 
+          <h3>Devolver Filme</h3>
+          <% remote_form_for :devolucao, :url => {:controller => :main, :action => :devolucao} do |f|%>
+            <p>Cópia: <%= f.text_field :copia_id , :size => 6%>&nbsp;<%= f.submit "Devolver" %></p>
+          <% end %>
+
           <h3>Menu</h3>
           <ul class="sidemenu">
             <li><%= link_to "Filmes", filmes_path%></li>
