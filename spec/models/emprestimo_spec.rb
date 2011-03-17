@@ -10,13 +10,6 @@ describe Emprestimo do
 		}
   end
 
-	xit "deveria devolver" do
-		lambda {
-			emprestimos(:nao_foram).devolver
-		}.should change(emprestimos(:nao_foram), :data_devolucao)	and
-			should change(emprestimos(:nao_foram), :valor)
-	end
-
 	it "deveria ser invalido sem data de empréstimo" do
 		lambda {
 			emprestimo = create_emprestimo(:data_emprestimo => nil)
