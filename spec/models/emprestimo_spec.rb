@@ -29,11 +29,15 @@ describe Emprestimo do
 		}.should_not raise_error
 	end
 
-  it "deveria retornar o valor devido" do
-    emprestimos(:valor_devido).valor_devido.should eql 9
+  it "deveria retornar o valor devido de um empréstimo com atraso" do
+    emprestimos(:valor_devido_com_atraso).valor_devido.should eql 9
   end
 
-	private
+	it "deveria retornar o valor devido de um empréstimo sem atraso" do
+    emprestimos(:valor_devido_sem_atraso).valor_devido.should eql 3
+  end
+
+  private
     def create_emprestimo(options={})
       Emprestimo.create({
         :data_emprestimo => Date.today,
