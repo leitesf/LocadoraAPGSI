@@ -2,7 +2,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe Socio do
 
-	fixtures :socios
+	fixtures :socios, :emprestimos
 
   it "deveria ser válido" do
     lambda {
@@ -44,10 +44,25 @@ describe Socio do
     end
 
   it "deveria ter emprestimos devidos" do
-    emprestimos = socios(:joao).emprestimos_devidos
-    for emprestimo in emprestimos
-      emprestimo.data_devolucao.should be_nil
-    end
+    lambda {
+      emprestimos = socios(:joao).emprestimos_devidos
+      for emprestimo in emprestimos
+        emprestimo.data_devolucao.should be_nil
+      end
+    }
+  end
+
+  it "deveria ter emprestimos devolvidos" do
+    lambda{
+      emprestimos = socios(:joao).emprestimos_devolvidos
+      for emprestimo in emprestimos
+        emprestimo.data_devolucao.should be_nil
+      end
+    }
+  end
+
+  it "deveria ter emprestimos devolvidos" do
+    socios(:joao).emprestimos_devolvidos.size.should eql(2)
   end
 
 	private

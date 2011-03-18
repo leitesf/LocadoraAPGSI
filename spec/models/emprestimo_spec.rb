@@ -37,6 +37,14 @@ describe Emprestimo do
     emprestimos(:valor_devido_sem_atraso).valor_devido.should eql 3.0
   end
 
+  it "deveria buscar o empréstimo não devolvido" do
+    Emprestimo.buscar_emprestimo_nao_devolvido(copias(:de_volta)).should be_an_instance_of(Emprestimo)
+  end
+
+  it "deveria devolver o empréstimo" do
+    emprestimos(:nao_foram).devolver.should be_true
+  end
+
   private
     def create_emprestimo(options={})
       Emprestimo.create({

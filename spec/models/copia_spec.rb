@@ -18,6 +18,10 @@ describe Copia do
       end
     end
 
+    it "deveria ter uma lista de copias em mal estado" do
+      copias = Copia.copias_em_mal_estado.should be_an_instance_of(Array)
+    end
+
     
     it "deveria possuir relacionamento com filme" do
       lambda {
@@ -28,11 +32,17 @@ describe Copia do
     it "deveria emprestar a cópia do filme" do
       lambda{
         emprestimo = copias(:nao_foram).emprestar(socios(:joao))
-        emprestimo.should be_an_instance_of(Emprestimo)
-        copias(:nao_foram).locado.should be_true
         socios(:joao).emprestimos.should include(emprestimo)
-      }
-      
+      }      
+    end
+
+    it "deveria trazer uma instancia de emprestimo" do
+      copias(:nao_foram).emprestar(socios(:joao)).should be_an_instance_of(Emprestimo)
+    end
+
+    it "o filme deveria estar locado depois de emprestado" do
+      emprestimo = copias(:nao_foram).emprestar(socios(:joao))
+      copias(:nao_foram).locado.should be_true
     end
 
     it "deveria devolver o filme que foi alugado" do
@@ -40,7 +50,23 @@ describe Copia do
       lambda{
         emprestimo = copia.emprestar(socios(:joao))
         copia.devolver.should be_true
+      }
+    end
+
+    it "deveria estar com locado false depois de devolver o filme" do
+      copia = copias(:nao_foram)
+      lambda{
+        emprestimo = copia.emprestar(socios(:joao))
+        copia.devolver
         copia.locado.should be_false
+      }
+    end
+
+    it "deveria trazer a data devolução como hoje ao devolver um filme" do
+      copia = copias(:nao_foram)
+      lambda{
+        emprestimo = copia.emprestar(socios(:joao))
+        copia.devolver
         emprestimo.data_devolucao.should eql(Date.today)
       }
     end
@@ -50,7 +76,11 @@ describe Copia do
     end
 
     it "deveria retornar o valor devido do último empréstimo" do
-      copias(:nao_foram).valor_devido_do_ultimo_emprestimo.should be_an_instance_of(Float)
+      copias(:nao_foram).valor_devido_do_ultimo_emprestimo.should eql(9.0)
+    end
+
+    it "deveria trazer valor zero para um empréstimo não devolvido" do
+      copias(:de_volta).valor_devido_do_ultimo_emprestimo.should eql(0.0)
     end
   end
 
