@@ -2,6 +2,7 @@
 <table>
   <tr>
     <th>Título</th>
+    <th>Cópias</th>
     <th></th>
     <th></th>
     <th></th>
@@ -10,6 +11,7 @@
   <% filmes.each do |filme| %>
     <tr>
       <td><%=h filme.titulo%></td>
+      <td><%=h filme.copias.size%></td>
       <td><%= link_to 'Visualizar', filme %></td>
       <td><%= link_to 'Editar', edit_filme_path(filme) %></td>
       <td><%= link_to 'Excluir', filme, :confirm => 'Você tem certeza?', :method => :delete %></td>
