@@ -3,6 +3,10 @@ class SociosController < ApplicationController
     @socios = Socio.all
   end
 
+  def inadimplentes
+    @socios = Socio.socios_devedores
+  end
+
   def show
     @socio = Socio.find(params[:id])
     @ators = Ator.all.collect{|p| [p.nome, p.id]}

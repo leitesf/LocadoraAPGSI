@@ -12,7 +12,7 @@ class Socio < ActiveRecord::Base
     for socio in Socio.all
       if socio.emprestimos_devidos.size > 0
         for emprestimo in socio.emprestimos_devidos
-          if (emprestimo.data_emprestimo + 3.days) > Date.today
+          unless (emprestimo.data_emprestimo + 3.days) > Date.today
             lista << socio
           end
         end

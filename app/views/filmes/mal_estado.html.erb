@@ -1,0 +1,13 @@
+<h2>Cópias em mal estado</h2>
+<table id ="list_copias">
+    <tr class="head">
+      <td>Código</td>
+      <td>Filme</td>
+      <td>Data de Aquisição</td>
+      <td>Estado</td>
+      <td>Situação</td>
+    </tr>
+  <% for copia in @copias%>
+    <%= render :partial => 'list_copias_mal_estado', :locals => {:copia => copia} %>
+  <% end %>
+</table>

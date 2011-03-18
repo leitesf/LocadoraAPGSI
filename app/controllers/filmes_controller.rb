@@ -3,6 +3,10 @@ class FilmesController < ApplicationController
     @filmes = Filme.all
   end
 
+  def mal_estado
+    @copias = Copia.copias_em_mal_estado
+  end
+
   def show
     @filme = Filme.find(params[:id])
     @ators = Ator.all.collect{|p| [p.nome, p.id]}

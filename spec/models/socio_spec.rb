@@ -66,13 +66,7 @@ describe Socio do
   end
 
   it "deveria trazer a lista de devedores" do
-    lambda{
-      for socio in socios
-        Socio.create(socio)
-      end
       Socio.socios_devedores.size.should eql(1)
-    }
-    
   end
 
 	private

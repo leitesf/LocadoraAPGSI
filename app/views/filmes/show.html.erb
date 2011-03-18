@@ -16,7 +16,7 @@
     <%= render :partial => 'list_copias', :locals => {:copia => copia} %>
   <% end %>
 </table>
-<% remote_form_for :copia, :url => {:controller => :filmes ,:action => :new_copia, :filmes_id => @filme.id} do |f|%>
+<% remote_form_for :copia, :url => {:controller => :filmes ,:action => :new_copia, :filme_id => @filme.id} do |f|%>
 <h4>Nova cópia</h4>
   <p> Data de Aquisição: <%= f.text_field :aquisicao %></p>
   <p>Estado: <%= f.select :estado,["Bom","Ruim"] %></p>
